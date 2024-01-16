@@ -17,13 +17,9 @@ https://bit.ly/3S7MoEl
 
   <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
 
-#### 언어
+#### 프레임워크
 
-<img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
-
-#### 프레임워크/라이브러리
-
-<img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/typeorm-262627?style=for-the-badge&logo=typeorm&logoColor=white"/>
+<img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white"/>
 
 #### 데이터베이스
 
@@ -44,27 +40,12 @@ https://bit.ly/3S7MoEl
 
 **고객 테이블**
 
-```sql
-CREATE TABLE customers (
-    customer_id INT PRIMARY KEY,
-    customer_name VARCHAR(255),
-    customer_grade VARCHAR(50)
-);
+```javascript
 ```
 
 **주문 내역 테이블**
 
-```sql
-CREATE TYPE order_type_enum AS ENUM ('order', 'refund');
-
-CREATE TABLE order_history (
-    order_id INT PRIMARY KEY,
-    customer_id INT,
-    order_date DATE,
-    order_type order_type_enum,
-    order_amount DECIMAL(10,2),
-    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
-);
+```javascript
 ```
 
 <br>
