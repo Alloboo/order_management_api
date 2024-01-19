@@ -1,9 +1,5 @@
 import "reflect-metadata";
-import express, {
-  NextFunction,
-  Request,
-  Response,
-} from "express";
+import express, { NextFunction, Request, Response } from "express";
 import morgan from "morgan";
 import rootRouter from "./src/routes/root.router";
 
@@ -19,7 +15,7 @@ app.use("/", rootRouter);
 // 에러처리 미들웨어
 app.use((err: Error, _req: Request, res: Response, next: NextFunction) => {
   console.log("❌", err);
-  res.json({ ok: false, msg: err.message});
+  res.json({ ok: false, msg: err.message });
 });
 
 export default app;
