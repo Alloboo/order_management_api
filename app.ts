@@ -10,7 +10,7 @@ app.use(logger); // HTTP 메서드, 경로, 상태 코드 등을 확인 위한 �
 app.use(express.json()); // json 파싱
 
 // 라우터 등록
-app.use("/", rootRouter);
+app.use("/api", rootRouter);
 
 // 에러처리 미들웨어
 app.use((err: Error, _req: Request, res: Response, next: NextFunction) => {
