@@ -1,13 +1,13 @@
 import express from "express";
 import uploadRouter from "./upload.router";
 import monthlySalesRouter from "./monthly-sales.router";
-import orderListRouter from "./order-history.router";
+import orderListRouter from "./order-list.router";
 
 const rootRouter = express.Router();
 
 rootRouter.use("/uploads", uploadRouter);
 rootRouter.use("/monthlySales", monthlySalesRouter);
-rootRouter.use("/orderHistories", orderListRouter);
+rootRouter.use("/orderList", orderListRouter);
 
 // api 동작 확인
 rootRouter.use("/", (req, res) => {
