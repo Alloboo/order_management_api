@@ -54,8 +54,8 @@ export const uploadFileRepository = async (sheets: any[]) => {
         );
       }
     }
-  } catch (err) {
-    console.error("Error in uploadFileRepository:", err);
-    throw err;
+  } catch (error) {
+    console.error("Error in uploadFileRepository:", error);
+    throw error;
   }
 };

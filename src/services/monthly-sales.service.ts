@@ -75,7 +75,7 @@ class MonthlySalesService {
       // 계산 및 포맷팅된 월간 데이터 반환
       return formattedMonthlyData;
     } catch (error) {
-      console.error("데이터를 검색하는 중 오류가 발생했습니다:", error);
+      console.error("Error in monthlySalesService", error);
       throw error;
     }
   }

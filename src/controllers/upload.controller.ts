@@ -28,7 +28,8 @@ export const uploadFile = async (
 
       return res.json({ ok: true, msg: "파일이 성공적으로 업로드되었습니다." });
     });
-  } catch (err) {
-    next(err);
+  } catch (error) {
+    console.error("요청 처리 중 오류가 발생했습니다:", error);
+    res.status(500).json({ error: "Internal Server Error" });
   }
 };
