@@ -1,15 +1,4 @@
-# recruitment_task_twice
-
-(주)두번째 백엔드 개발자 채용 과제
-
-<br>
-
-## 과제 안내
-
-https://bit.ly/3S7MoEl
-
-<br>
-<br>
+주문 정보 업로드 및 주문 내역 조회 API 개발
 
 ## 1. 사용 기술
 
